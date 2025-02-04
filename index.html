@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PerPage.com - Academic Writing Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/lucide-icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/" class="nav-logo">
+                    <i data-lucide="book-open" class="icon blue"></i>
+                    <span>PerPage.com</span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-auth">
+                <a href="/signin.html" class="btn btn-secondary">
+                    <i data-lucide="log-in" class="icon-sm"></i>
+                    Sign In
+                </a>
+                <a href="/writer-dashboard.html" class="btn btn-primary">
+                    <i data-lucide="user-plus" class="icon-sm"></i>
+                    Be a Writer
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>PerPage.com</h1>
+            <p>Connect with expert writers for your academic assignments. 
+               Quality work, on time, every time.</p>
+            <div class="hero-buttons">
+                <a href="/signup.html" class="btn btn-primary">
+                    Get Started
+                    <i data-lucide="arrow-right" class="icon-sm"></i>
+                </a>
+                <a href="#features" class="btn btn-outline-white">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose PerPage.com?</h2>
+                <p>India's leading academic writing platform connecting students with expert writers.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="file-text" class="icon blue"></i>
+                    </div>
+                    <h3>Quality Writing</h3>
+                    <p>Expert writers deliver high-quality, plagiarism-free academic content tailored to your requirements.</p>
+                </div>
+                <!-- More feature cards... -->
+            </div>
+
+            <div class="section-header">
+                <h2>How It Works</h2>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i data-lucide="user-check" class="icon green"></i>
+                    </div>
+                    <h3>1. Sign Up</h3>
+                    <p>Create your account as a customer or writer. Complete verification process for writers.</p>
+                </div>
+                <!-- More step cards... -->
+            </div>
+
+            <div class="pricing-section">
+                <h2>Pricing Information</h2>
+                <div class="pricing-content">
+                    <p>Our pricing is transparent and competitive, starting from:</p>
+                    <ul>
+                        <li>Essays and Assignments: ₹800 per page</li>
+                        <li>Research Papers: ₹1,000 per page</li>
+                        <li>Technical Writing: ₹1,200 per page</li>
+                        <li>Thesis and Dissertations: Custom pricing based on requirements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms and Conditions -->
+    <section class="terms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Terms and Conditions</h2>
+                <p>Please read these terms carefully before using our services</p>
+            </div>
+
+            <div class="terms-grid">
+                <div class="terms-card">
+                    <div class="terms-icon">
+                        <i data-lucide="shield" class="icon blue"></i>
+                    </div>
+                    <h3>Privacy & Security</h3>
+                    <p>We ensure complete confidentiality of your personal information and academic work.</p>
+                </div>
+                <!-- More terms cards... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>PerPage.com</h3>
+                    <p>Your trusted platform for quality academic writing assistance.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="facebook" class="icon"></i></a>
+                        <a href="#"><i data-lucide="twitter" class="icon"></i></a>
+                        <a href="#"><i data-lucide="instagram" class="icon"></i></a>
+                        <a href="#"><i data-lucide="linkedin" class="icon"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> PerPage.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up" class="icon"></i>
+    </button>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

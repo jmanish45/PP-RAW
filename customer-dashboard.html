@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard - PerPage.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/lucide-icons" rel="stylesheet">
+    <style>
+        .dashboard {
+            padding-top: 4rem;
+        }
+
+        .dashboard-header {
+            background-color: var(--white);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .writers-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            padding: 1rem;
+        }
+
+        .writer-card {
+            background-color: var(--white);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .writer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .writer-info {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .writer-stats {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        .writer-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .status-badge {
+            background-color: var(--success);
+            color: var(--white);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+        }
+
+        .filter-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 0 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .writers-grid {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="nav-logo">
+                    <i data-lucide="book-open" class="icon blue"></i>
+                    <span>PerPage.com</span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">My Orders</a>
+                <a href="#" class="nav-link">Messages</a>
+                <a href="#" class="nav-link">Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+        <div class="dashboard-header">
+            <div class="container">
+                <h1 class="text-2xl font-bold">Find Your Perfect Writer</h1>
+                <p class="text-gray-600">Browse through our top-rated academic writers</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="filter-bar">
+                <div class="search-box">
+                    <input type="text" class="form-input" placeholder="Search writers...">
+                </div>
+                <button class="btn btn-secondary">
+                    <i data-lucide="filter" class="icon-sm"></i>
+                    Filter Writers
+                </button>
+            </div>
+
+            <div class="writers-grid">
+                <!-- Writer Card 1 -->
+                <div class="writer-card">
+                    <div class="writer-header">
+                        <div class="writer-info">
+                            <h2 class="font-semibold">Dr. Sharma</h2>
+                            <span class="status-badge">Available</span>
+                        </div>
+                        <div class="writer-stats">
+                            <span>
+                                <i data-lucide="star" class="icon-sm"></i>
+                                4.9 (156 orders)
+                            </span>
+                            <span>
+                                <i data-lucide="clock" class="icon-sm"></i>
+                                1 hour response
+                            </span>
+                        </div>
+                    </div>
+                    <p>PhD in Computer Science with 8+ years of academic writing experience.</p>
+                    <div class="writer-specialization">
+                        <strong>Specialization:</strong> Computer Science, Engineering
+                    </div>
+                    <div class="writer-pricing">
+                        <strong>Starting from:</strong> ₹800/page
+                    </div>
+                    <div class="writer-actions">
+                        <button class="btn btn-primary">Hire Writer</button>
+                        <button class="btn btn-secondary">View Profile</button>
+                    </div>
+                </div>
+
+                <!-- Writer Card 2 -->
+                <div class="writer-card">
+                    <div class="writer-header">
+                        <div class="writer-info">
+                            <h2 class="font-semibold">Prof. Gupta</h2>
+                            <span class="status-badge">Available</span>
+                        </div>
+                        <div class="writer-stats">
+                            <span>
+                                <i data-lucide="star" class="icon-sm"></i>
+                                4.8 (203 orders)
+                            </span>
+                            <span>
+                                <i data-lucide="clock" class="icon-sm"></i>
+                                2 hours response
+                            </span>
+                        </div>
+                    </div>
+                    <p>MBA from IIM with expertise in case studies and research papers.</p>
+                    <div class="writer-specialization">
+                        <strong>Specialization:</strong> Business Management, Economics
+                    </div>
+                    <div class="writer-pricing">
+                        <strong>Starting from:</strong> ₹850/page
+                    </div>
+                    <div class="writer-actions">
+                        <button class="btn btn-primary">Hire Writer</button>
+                        <button class="btn btn-secondary">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
